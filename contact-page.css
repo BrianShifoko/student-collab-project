@@ -1,10 +1,10 @@
 body 
-{ background: #121212; 
+{ background: #5a8a8a; 
   color: white; 
   font-family: 'Poppins', sans-serif; 
   text-align: center; 
-  margin: 0; }
+  margin: 0;
+}
 
-
-.contact { padding: 60px 20px; background: #1f1f1f; }
-.contact h2 { font-size: 2.2rem; color: #fff; margin-bottom: 30px; }
+.contact { padding: 60px 20px; background: #cea66a; }
+.contact h2 { font-size: 2.2rem; color: #110202; margin-bottom: 30px; }
