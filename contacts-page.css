@@ -1,5 +1,4 @@
-/* ===== Global Reset and Typography ===== */
-* {
+ {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,7 +12,7 @@
     font-size: 16px;
   }
   
-  /* ===== Hero Section ===== */
+  
   .hero {
     background: linear-gradient(135deg, #2e7d32, #66bb6a);
     color: white;
@@ -57,7 +56,6 @@
     color: #4b614b;
   }
   
-  /* ===== Form Styles ===== */
   .contact-form .form-group {
     margin-bottom: 25px;
   }
@@ -87,7 +85,6 @@
     outline: none;
   }
   
-  /* ===== CTA Button ===== */
   .cta-btn {
     display: inline-block;
     background-color: #2e7d32;
@@ -106,7 +103,6 @@
     transform: translateY(-2px);
   }
   
-  /* ===== Footer Section ===== */
   footer {
     background-color: #1b5e20;
     color: white;
@@ -130,10 +126,9 @@
   }
   
   .footer-btn:hover {
-    color: #fff176; /* soft gold shade */
+    color: #fff176; 
   }
   
-  /* ===== Responsive ===== */
   @media (max-width: 600px) {
     .hero h1 {
       font-size: 2.2rem;
