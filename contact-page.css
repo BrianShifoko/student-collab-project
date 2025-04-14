@@ -1,10 +1,109 @@
-body 
-{ background: #121212; 
-  color: white; 
-  font-family: 'Poppins', sans-serif; 
-  text-align: center; 
-  margin: 0; }
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+/* Body Styling */
+body {
+  background-color: #0b3d0b; /* Dark green */
+  color: #f5f0dc; /* Light cream/gold tone for text */
+  padding: 20px;
+}
 
-.contact { padding: 60px 20px; background: #1f1f1f; }
-.contact h2 { font-size: 2.2rem; color: #fff; margin-bottom: 30px; }
+/* Title */
+h1 {
+  text-align: center;
+  color: #d4af37; /* Gold */
+  margin-bottom: 30px;
+}
+
+/* Contact Section */
+.contact {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #145214; /* Slightly lighter green */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.2); /* Gold glow */
+}
+
+/* Section Header */
+.contact h2 {
+  color: #d4af37;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Contact Info Grid */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Contact Boxes */
+.contact-method {
+  background-color: #0f330f;
+  padding: 20px;
+  border: 1px solid #d4af37;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-method:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.4);
+}
+
+/* Contact Method Headings */
+.contact-method h3 {
+  color: #d4af37;
+  margin-bottom: 10px;
+}
+
+/* Contact Links */
+.contact-method a {
+  color: #f5f0dc;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.contact-method a:hover {
+  color: #d4af37;
+}
+
+/* Contact Paragraphs (e.g. phone) */
+.contact-method p {
+  color: #f5f0dc;
+  font-size: 1.1em;
+}
+
+/* Responsive Layout */
+@media (min-width: 600px) {
+  .contact-info {
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  .contact-method {
+      flex: 1;
+  }
+}
+/* Footer Styles */
+.site-footer {
+  background-color: #0f330f;
+  color: #d4af37;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 1px solid #d4af37;
+  font-size: 0.9em;
+}
+
+.site-footer p {
+  margin: 5px 0;
+}

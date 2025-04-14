@@ -1,155 +1,95 @@
-/* ===== Global Reset and Typography ===== */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Lora', serif;
-    background-color: #f9fdf9;
-    color: #2f4f2f;
-    line-height: 1.6;
-    font-size: 16px;
-  }
-  
-  /* ===== Hero Section ===== */
-  .hero {
-    background: linear-gradient(135deg, #2e7d32, #66bb6a);
-    color: white;
-    padding: 80px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #0b3d0b; /* Dark green */
+    color: #f5f0dc; /* Light cream/gold tone for text */
+    padding: 20px;
+}
+
+/* Title */
+h1 {
     text-align: center;
-  }
-  
-  .hero h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 3rem;
-    margin-bottom: 10px;
-  }
-  
-  .hero p {
-    font-size: 1.2rem;
-    font-weight: 300;
-  }
-  
-  /* ===== Contact Form Section ===== */
-  .contact-form-section {
-    padding: 60px 20px;
-    background-color: #f0f9f0;
-  }
-  
-  .container {
+    color: #d4af37; /* Gold */
+    margin-bottom: 30px;
+}
+
+/* Contact Section */
+.contact {
     max-width: 800px;
     margin: 0 auto;
-  }
-  
-  .contact-form-section h2 {
+    background-color: #145214; /* Slightly lighter green */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.2); /* Gold glow */
+}
+
+/* Section Header */
+.contact h2 {
+    color: #d4af37;
     text-align: center;
-    font-size: 2.2rem;
     margin-bottom: 20px;
-    color: #388e3c;
-    font-family: 'Playfair Display', serif;
-  }
-  
-  .contact-form-section p {
-    text-align: center;
-    margin-bottom: 40px;
-    color: #4b614b;
-  }
-  
-  /* ===== Form Styles ===== */
-  .contact-form .form-group {
-    margin-bottom: 25px;
-  }
-  
-  .contact-form label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-    color: #2e7d32;
-  }
-  
-  .contact-form input,
-  .contact-form textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #c8e6c9;
-    border-radius: 5px;
-    font-size: 1rem;
-    background-color: #fff;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .contact-form input:focus,
-  .contact-form textarea:focus {
-    border-color: #a5d6a7;
-    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
-    outline: none;
-  }
-  
-  /* ===== CTA Button ===== */
-  .cta-btn {
-    display: inline-block;
-    background-color: #2e7d32;
-    color: white;
-    border: none;
-    padding: 14px 30px;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-  }
-  
-  .cta-btn:hover {
-    background-color: #1b5e20;
-    transform: translateY(-2px);
-  }
-  
-  /* ===== Footer Section ===== */
-  footer {
-    background-color: #1b5e20;
-    color: white;
-    text-align: center;
-    padding: 30px 20px;
-    font-size: 0.95rem;
-    margin-top: 50px;
-  }
-  
-  .footer-links {
-    margin-bottom: 15px;
-  }
-  
-  .footer-btn {
-    display: inline-block;
-    margin: 0 10px;
+}
+
+/* Contact Info Grid */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Contact Boxes */
+.contact-method {
+    background-color: #0f330f;
+    padding: 20px;
+    border: 1px solid #d4af37;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-method:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.4);
+}
+
+/* Contact Method Headings */
+.contact-method h3 {
+    color: #d4af37;
+    margin-bottom: 10px;
+}
+
+/* Contact Links */
+.contact-method a {
+    color: #f5f0dc;
     text-decoration: none;
-    color: gold;
-    font-weight: 600;
-    transition: color 0.3s ease;
-  }
-  
-  .footer-btn:hover {
-    color: #fff176; /* soft gold shade */
-  }
-  
-  /* ===== Responsive ===== */
-  @media (max-width: 600px) {
-    .hero h1 {
-      font-size: 2.2rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.contact-method a:hover {
+    color: #d4af37;
+}
+
+/* Contact Paragraphs (e.g. phone) */
+.contact-method p {
+    color: #f5f0dc;
+    font-size: 1.1em;
+}
+
+/* Responsive Layout */
+@media (min-width: 600px) {
+    .contact-info {
+        flex-direction: row;
+        justify-content: space-between;
     }
-  
-    .contact-form-section h2 {
-      font-size: 1.8rem;
+
+    .contact-method {
+        flex: 1;
     }
-  
-    .cta-btn {
-      width: 100%;
-    }
-  
-    .footer-btn {
-      display: block;
-      margin: 10px 0;
-    }
-  }
-  
+}
