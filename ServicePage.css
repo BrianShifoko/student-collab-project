@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    background-image: linear-gradient();
+}
+img{
+    width: 70px;
+    height: 70px;
+}
+
+h1 {
+    color: #1faf56;
+}
