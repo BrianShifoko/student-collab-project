@@ -1,18 +1,42 @@
 footer {
-    background-color: #222;
+    background-color:;
     color: #ccc;
     padding: 30px 20px;
     text-align: center;
   }
   
-  .container {
+  body {
+    background-color: black;
+    color: white;
+  }
+  
+  .container{
     display: flex;
     justify-content: center;
     gap: 20px;
     margin-bottom: 15px;
-    border-bottom: #222;
+    color: white;
+    background-color: #333;
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.3s;
   }
-  
+  .container{
+    transform: scale(1.1);
+  }
+
+  .home:hover{background: color green;} 
+  .product:hover{background-color: orange;}
+  .Guid:hover{background-color: aliceblue;}
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 15px;
+  }
   .social-icons a {
     color: white;
     background-color: #333;
@@ -28,10 +52,63 @@ footer {
   }
   
   .linkedin:hover { background-color: #0077b5; }
-  .instagram:hover{background-color: palevioletred;}
+  .tiktok:hover   { background-color: #010101; }
   .facebook:hover { background-color: #3b5998; }
+  .youtube:hover  { background-color: #ff0000; }
+  .threads:hover  { background-color: #000; }
+  .twitter:hover  { background-color: #1da1f2; }
   
   .footer-text {
     font-size: 14px;
     color: #aaa;
   }
+  .product-section {
+    padding: 25px;
+    background-color: greenyellow;
+    margin: 25px auto;
+    width: 90%;
+    border-radius: 9px;
+}
+  .product-section h2 {
+    font-family: Arial, sans-serif;
+    color: #161d03;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #44e79ba6;
+    border-radius: 100px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.product-card p1 {
+    color: #0e0d0f;
+    font-size: 16px;
+}
+
+.product-card p2 {
+    color: #eb6619ec;
+    font-size: 16px;
+}
